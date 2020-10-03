@@ -5,25 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        
+      #my-parag {
+        color: red;
+      }
+      
+      .text-blue {
+        color: rgb(75, 144, 235) !important;
+      }
+
+      .bg-gray {
+        background-color: lightgray !important;
+      }
+      .product {
+        color: aqua;
+        background-color: darkkhaki;
+        font-size: 18px;
+      }
+      h1 {
+        color: crimson;
+      }
+      p {
+        font-size: 20px;
+        color: darkorchid;
+      }
     </style>
   </head>
   <body>
-    <p style="color: red; background-color: lightgrey; font-size: 20px; width: 500px;">The selector points to the HTML element you want to style.</p>
+    <a href="/">Home</a>
+    <a href="1_css_Intro.html">Css Intro</a>
+    <h1>CSS Introduction</h1>
+    <p style="color: green; background-color: yellow !important;" class="bg-gray text-blue">
+      The selector points to the HTML element you want to style.
+    </p>
 
-    <p style="color: red; background-color: lightgrey; font-size: 20px; width: 500px;">
+    <p id="my-parag">
       The declaration block contains one or more declarations separated by
       semicolons.
     </p>
 
-    <p>
+    <p class="product text-blue bg-gray">
       Each declaration includes a CSS property name and a value, separated by a
       colon.
     </p>
 
-    <p>
+    <p class="text-blue">
       Multiple CSS declarations are separated with semicolons, and declaration
       blocks are surrounded by curly braces.
+    </p>
+    <h2 class="text-blue">How To Add CSS</h2>
+    <p class="bg-gray">
+      When a browser reads a style sheet, it will format the HTML document
+      according to the information in the style sheet.
     </p>
   </body>
 </html>
