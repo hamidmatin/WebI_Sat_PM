@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 250px;
+        height: 250px;
+        background-color: #cacaca;
+        margin: 30px;
+        /* color: red; */
+      }
+
+      #div1 {
+        border-top-style: solid;
+        border-top-color: green;
+        border-top-width: 10px;
+
+        border-right-style: dashed;
+        border-right-color: red;
+        border-right-width: 20px;
+
+        /* Shorhand 1 */
+        /* border-top: ; */
+        /* border-right: ; */
+        border-bottom: 10px dotted dodgerblue;
+        border-left: yellow 20px double;
+      }
+
+      #div2 {
+        border-style: dashed;
+        border-style: dashed double solid dotted;
+        border-color: red green blue;
+        border-width: 10px;
+      }
+      #div3 {
+        border: 10px outset greenyellow;
+        border: 10px groove greenyellow;
+        border: 10px inset greenyellow;
+      }
+      #div4 {
+        border-top-left-radius: 30px;
+        border-top-left-radius: 130px;
+        border-top-left-radius: 50%;
+        border-top-left-radius: 100%;
+
+        border-bottom-right-radius: 50px;
+        border-bottom-right-radius: 150px;
+        border-bottom-right-radius: 100%;
+
+        /* border: 2px solid; */
+      }
+      #div5 {
+        border-top-left-radius: 100%;
+        border-top-right-radius: 50px;
+        border-top-right-radius: 100px;
+        border-top-right-radius: 100%;
+      }
+
+      #div6 {
+        border-radius: 20px;
+        border-radius: 20px 40px;
+        border-radius: 20px 40px 60px;
+        border-radius: 20px 40px 60px 80px;
+        border-radius: 100%;
+        border-radius: 50%;
+
+        /* width: 400px; */
+      }
+
+      #div7 {
+        border: 4px solid red;
+        outline: 10px dashed green;
+        outline-offset: 20px;
+        outline-offset: -20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">Border</div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+    <div id="div6"></div>
+    <div id="div7"></div>
+  </body>
+</html>
