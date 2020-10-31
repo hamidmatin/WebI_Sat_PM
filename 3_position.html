@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            height: 1400px;
+            background: url(images/paper.gif);
+            margin: 0;
+        }
+        #div1{
+            height: 100px;
+            background-color: rgb(144, 241, 245);
+
+            position: static;
+            top: 100px;
+        }
+        #fixed{
+            padding: 15px;
+            background-color: lightsalmon;
+            /* width: max-content; */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        #div2, #div3{
+            float: left;
+            width: 15%;
+            height: 200px;
+            background-color: rgb(243, 241, 119);
+        }
+        #relative{
+            float: left;
+            width: 70%;
+            height: 500px;
+            background-color: rgb(217, 119, 230);
+
+            position: relative;
+            bottom: -50px;
+            left: -50px;
+        }
+
+        #child{
+            width: 40%;
+            height: 40%;
+            background-color: rgb(235, 162, 53);
+            position: absolute;
+            right: 0;
+            top: -100px;
+        }
+        #absolute{
+            width: 70%;
+            height: 70%;
+            background-color: rgb(245, 19, 11);
+
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="fixed">Fixed Position sdsdsADS ASDSA</div>
+    <div id="div2"></div>
+    <div id="relative">
+        <div id="child">
+            <div id="absolute">FAFADFADF DFADF ADFADF <br>dsdsdsds</div>
+        </div>
+    </div>
+    <div id="div3"></div>
+</body>
+</html>
