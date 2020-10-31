@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+      .container {
+        width: 80%;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      #header{
+          background-color: #151515;
+      }
+
+      #header .top{
+          height: 200px;
+      }
+      #header .feature{
+          height: 566px;
+      }
+      #header .feature .left{
+          float: left;
+          width: 66.6666%;
+          height: 100%;
+        }
+        
+        #header .feature .big{
+            height: 100%;
+          
+          position: relative;
+      }
+      #header .feature .big img{
+          width: 100%;
+          height: 100%;
+          display: block;
+      }
+      #header .feature .overlay{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: black;
+          opacity: .3;
+      }
+      #header .feature .big:hover >.overlay{
+          opacity: .7;
+      }
+      #header .feature .right{
+          float: left;
+          width: 33.3333%;
+      }
+    </style>
+  </head>
+  <body>
+      <div id="header">
+          <div class="container">
+              <div class="top"></div>
+              <div class="feature">
+                  <div class="left">
+                    <div class="big">
+                        <img src="images/unsplash74171051.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div>
+                            <a href="#">sdsd</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="right">
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>
