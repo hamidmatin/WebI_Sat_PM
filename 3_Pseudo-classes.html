@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 5px solid black;
+        margin-bottom: 20px;
+      }
+      p:first-child {
+        color: red;
+      }
+      p:last-child {
+        color: green;
+      }
+
+      /*
+        :nth-child(n)
+            nth of child
+      */
+      p:nth-child(3) {
+          color: blue;
+      }
+      /*
+        :nth-child(an+b)
+            a => n>=1 => ضریب انتخاب 
+            b => n>=0 => شماره ردیف اولین انتخاب
+            default = 0
+      */
+
+      /* p:nth-child(2n + 4) {
+          background-color: lightskyblue;
+      } */
+      p:nth-child(3n + 4) {
+          background-color: lightskyblue;
+      }
+
+      /* Even */
+      /* p:nth-child(2n + 0) {
+          text-decoration: underline;
+      } */
+      /* p:nth-child(2n) {
+          text-decoration: underline;
+      } */
+      p:nth-child(even) {
+          text-decoration: underline;
+      }
+
+      /* Odd */
+      /* p:nth-child(2n + 1) {
+          text-decoration: underline;
+      } */
+      p:nth-child(odd) {
+          font-size: 20px;
+      }
+
+      p:nth-last-child(2){
+        font-weight: 900;
+        font-style: italic;
+      }
+
+      div:first-child {
+        border-color: red;
+      }
+
+      p:not(:last-child){
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>jadfkf</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <pre>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </pre>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione
+        omnis delectus odit minima doloribus? Ratione ea nam ipsa obcaecati
+        officiis, perspiciatis facere nostrum nulla officia fugit quasi enim
+        atque.
+      </p>
+    </div>
+  </body>
+</html>

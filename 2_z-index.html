@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #z-index{
+            width: 450px;
+            height: 450px;
+            border: 1px solid black;
+            margin: 50px;
+
+            position: relative;
+        }
+        #z-index div{
+            position: absolute;
+        }
+        #div1{
+            top: 0;
+            left: 0;
+            background-color: brown;
+            width: 180px;
+            height: 180px;
+        }
+
+        #div2{
+            top: 30px;
+            left: 30px;
+            background-color: darkorchid;
+            width: 180px;
+            height: 180px;
+        }
+
+        #div3{
+            top: 60px;
+            left: 60px;
+            background-color: darkgoldenrod;
+            width: 180px;
+            height: 180px;
+        }
+
+        #div4{
+            top: 90px;
+            left: 90px;
+            background-color: darkorange;
+            width: 180px;
+            height: 180px;
+
+            z-index: auto;
+            z-index: 2;
+        }
+
+        #div5{
+            top: 120px;
+            left: 120px;
+            background-color: rgb(77, 238, 184);
+            width: 180px;
+            height: 180px;
+            z-index: 1;
+        }
+
+        #div6{
+            top: 150px;
+            left: 150px;
+            background-color: rgb(204, 102, 199);
+            width: 180px;
+            height: 180px;
+            z-index: -1;
+        }
+
+        #div7{
+            top: 180px;
+            left: 180px;
+            background-color: rgb(203, 238, 77);
+            width: 180px;
+            height: 180px;
+        }
+    </style>
+</head>
+<body>
+    <div id="z-index">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div5"></div>
+        <div id="div6"></div>
+        <div id="div7"></div>
+    </div>
+</body>
+</html>
