@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        selector::pseudo-element {
+            property: value;
+        }
+      */
+      p{
+          font-size: 20px;
+          line-height: 2;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      /*
+        font properties
+        color properties
+        background properties
+        word-spacing
+        letter-spacing
+        text-decoration
+        vertical-align
+        text-transform
+        line-height
+        clear
+      */
+      p::first-line{
+        color: red;
+      }
+
+      /*
+        font properties
+        color properties 
+        background properties
+        margin properties
+        padding properties
+        border properties
+        text-decoration
+        vertical-align (only if "float" is "none")
+        text-transform
+        line-height
+        float
+        clear
+      */
+      p::first-letter{
+        color: blue;
+        font-size: 64px;
+        float: left;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: .8;
+        margin-right: 10px;
+      }
+
+      ::selection{
+          background-color: red;
+          color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facere
+      doloribus, quas corrupti tempora, nesciunt veniam quia quos temporibus
+      ratione vel beatae fugit ipsam, eaque eos impedit perferendis. Maiores,
+      necessitatibus?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facere
+      doloribus, quas corrupti tempora, nesciunt veniam quia quos temporibus
+      ratione vel beatae fugit ipsam, eaque eos impedit perferendis. Maiores,
+      necessitatibus?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facere
+      doloribus, quas corrupti tempora, nesciunt veniam quia quos temporibus
+      ratione vel beatae fugit ipsam, eaque eos impedit perferendis. Maiores,
+      necessitatibus?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facere
+      doloribus, quas corrupti tempora, nesciunt veniam quia quos temporibus
+      ratione vel beatae fugit ipsam, eaque eos impedit perferendis. Maiores,
+      necessitatibus?
+    </p>
+    <ul>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio cupiditate eum suscipit est eaque illo inventore harum consequuntur fugit blanditiis. Animi cum, facilis expedita nisi vero sapiente ipsum qui blanditiis.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio cupiditate eum suscipit est eaque illo inventore harum consequuntur fugit blanditiis. Animi cum, facilis expedita nisi vero sapiente ipsum qui blanditiis.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio cupiditate eum suscipit est eaque illo inventore harum consequuntur fugit blanditiis. Animi cum, facilis expedita nisi vero sapiente ipsum qui blanditiis.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio cupiditate eum suscipit est eaque illo inventore harum consequuntur fugit blanditiis. Animi cum, facilis expedita nisi vero sapiente ipsum qui blanditiis.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio cupiditate eum suscipit est eaque illo inventore harum consequuntur fugit blanditiis. Animi cum, facilis expedita nisi vero sapiente ipsum qui blanditiis.</li>
+    </ul>
+  </body>
+</html>
