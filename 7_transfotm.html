@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        float: left;
+        width: 200px;
+        height: 200px;
+        background-color: lightgreen;
+        text-align: center;
+        line-height: 200px;
+        margin-right: 20px;
+        margin-top: 150px;
+        border: 5px ridge green;
+
+        transition: transform 1s;
+      }
+
+      #div1:hover {
+        /* transform: translate(x, y); */
+        transform: translate(100px, 50px);
+        transform: translate(100px, -50px);
+        transform: translate(-100px, -50px);
+        transform: translate(-100px, 50px);
+        transform: translate(100%, 100%);
+        transform: translate(100%, -100%);
+        transform: translate(0, 100%);
+        transform: translate(100%, 0);
+        transform: translate(100%);
+        transform: translateX(100%);
+        transform: translateZ(100%);
+        transform: translateY(100%);
+      }
+
+      #div2:hover {
+        /* transform: scale(w, h); */
+        transform: scale(1.5, 0.5);
+        transform: scale(0.5, 1.5);
+        transform: scale(0, 1);
+        transform: scale(1, 0);
+        transform: scale(1.5, 0);
+        transform: scale(-1.5, -0.5);
+        transform: scale(-1.5, -1.5);
+        transform: scale(1.5);
+        transform: scale(0.5);
+        transform: scaleX(0.5);
+        transform: scaleY(0.5);
+      }
+
+      #div3:hover {
+        transform: rotate(45deg);
+        transform: rotate(-45deg);
+        transform: rotate(-45grad);
+        transform: rotate(-45rad);
+        transform: rotate(-1.5turn);
+        transform: rotateZ(-1.5turn);
+        transform: rotateX(-1.5turn);
+        transform: rotateY(-1.5turn);
+      }
+      #div4:hover {
+        transform: skewX(-20deg);
+        transform: skewX(20deg);
+        transform: skewY(20deg);
+        transform: skewY(-20deg);
+        transform: skew(-20deg);
+        transform: skew(-20deg, -20deg);
+        transform: skew(-20deg, 20deg);
+      }
+      #div5:hover {
+        /* transform: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()); */
+        transform: matrix(1, -0.3, 0, 1, 0, 0);
+        transform: matrix(1.5, -0.3, .3, .5, 100, -100);
+      }
+      #div6:hover{
+          transform: rotate(45deg) ;
+          transform: rotate(45deg) translateY(100px);
+          transform: translateY(100px) rotate(45deg);
+          transform: translateY(100px) rotate(45deg) translateX(-100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">Translate</div>
+    <div id="div2">Scale</div>
+    <div id="div3">Rotate</div>
+    <div id="div4">Skew</div>
+    <div id="div5">Matrix</div>
+    <div id="div6">Mixed</div>
+  </body>
+</html>
