@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style: none;
+      }
+      .sample-1 span::after {
+        content: 'After';
+        color: red;
+        margin-left: 20px;
+      }
+      .sample-1 span::before {
+        content: 'Before';
+        color: green;
+        margin-right: 20px;
+      }
+
+      .sample-2 span::after {
+        content: 'rial';
+        margin-left: 5px;
+        color: #9c9c9c;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: uppercase;
+        font-size: 80%;
+      }
+
+      .sample-3 span::after{
+          content: url('/images/money_2.png');
+      }
+
+      .sample-4 a{
+          text-decoration: none;
+          display: inline-block;
+          padding: 8px;
+      }
+      .sample-4 a::after{
+          content: "("attr(href)")";
+          font-size: 80%;
+          margin-left: 10px;
+          font-style: italic;
+          font-family: 'Courier New', Courier, monospace;
+          color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="sample-1">
+      <li><span>Item 1</span></li>
+      <li><span>Item 2</span></li>
+      <li><span>Item 3</span></li>
+      <li><span>Item 4</span></li>
+      <li><span>Item 5</span></li>
+    </ul>
+    <ul class="sample-2">
+      <li><span>12532255</span></li>
+      <li><span>123154</span></li>
+      <li><span>9989842</span></li>
+      <li><span>4613212</span></li>
+      <li><span>46453</span></li>
+      <li><span>46489498</span></li>
+      <li><span>64546</span></li>
+    </ul>
+    <ul class="sample-3">
+      <li><span>12532255</span></li>
+      <li><span>123154</span></li>
+      <li><span>9989842</span></li>
+      <li><span>4613212</span></li>
+      <li><span>46453</span></li>
+      <li><span>46489498</span></li>
+      <li><span>64546</span></li>
+    </ul>
+    <ul class="sample-4">
+        <li><a href="https://www.mft.info/" target="_blank">MFT</a></li>
+        <li><a href="http://www.sematec-co.com/" target="_blank">Sematec</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+    </ul>
+  </body>
+</html>

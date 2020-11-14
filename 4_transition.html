@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            position: relative;
+            left: 0;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+
+            opacity: 1;
+
+            transition-property: width, height, left;
+            transition-duration: .3s, 1s;
+            transition-delay: 1s, 0;
+            transition-timing-function: ease;
+            transition-timing-function: ease-in;
+            transition-timing-function: ease-out;
+            transition-timing-function: ease-in-out;
+            transition-timing-function: linear;
+            transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55), linear;
+
+            /* transition: property duration delay timing-function; */
+            transition: width .3s ease;
+            transition: width .3s .5s ease, height .6s .8s linear, left .5s 1.4s;
+            transition: all .6s cubic-bezier(.28,-0.73,.49,1.49);
+
+        }
+        #div1:hover{
+            width: 300px;
+            height: 300px;
+            left: 50px;
+            background-color: blue;
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">Transition</div>
+</body>
+</html>

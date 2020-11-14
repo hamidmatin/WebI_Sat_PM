@@ -32,6 +32,8 @@
         line-height: 50px;
         /* height: 50px; */
         padding: 0 20px;
+
+        transition: all 0.3s;
       }
       .nav ul li:hover > a {
         background-color: black;
@@ -48,26 +50,27 @@
         background-color: hsl(348, 83%, 27%);
       }
 
-      .nav ul li ul{
-          position: absolute;
-          z-index: 9999;
-          visibility: hidden;
-      }
-      .nav ul li:hover > ul{
-          visibility: visible;
-      }
-
-      .nav ul  li{
-        position: relative;
-      }
-      .nav ul ul{
-        top: 100%; 
-        left: 0; 
+      .nav ul li ul {
+        position: absolute;
+        z-index: 9999;
+        visibility: hidden;
+        top: 100%;
+        left: 0;
         /* padding-top: 20px; */
         border-top: 20px solid transparent;
+        transition: all 0.3s;
+        opacity: 0;
+      }
+      .nav ul li:hover > ul {
+        visibility: visible;
+        opacity: 1;
       }
 
-      .nav ul ul ul{
+      .nav ul li {
+        position: relative;
+      }
+
+      .nav ul ul ul {
         top: 0;
         left: 100%;
         /* padding-top: 0;
@@ -76,13 +79,12 @@
         border-left: 20px solid transparent;
       }
 
-
       /*******************/
-      .banner{
-          position: relative;
+      .banner {
+        position: relative;
       }
-      .banner img{
-          width: 100%;
+      .banner img {
+        width: 100%;
       }
     </style>
   </head>
