@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes my-anim {
+        from {
+          width: 50px;
+          height: 50px;
+          background-color: blue;
+        }
+        to {
+          width: 300px;
+          height: 300px;
+          background-color: green;
+        }
+      }
+      #div1 {
+          float: left;
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        
+        animation-name: my-anim;
+        animation-duration: 6s;
+        animation-delay: 0s;
+        animation-timing-function: linear;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      #div2{
+        width: 150px;
+        height: 150px;
+        float: right;
+        background-color: red;
+        
+        animation-name: my-anim;
+        animation-duration: 2s;
+        animation-delay: 4s;
+        animation-timing-function: linear;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+  </body>
+</html>

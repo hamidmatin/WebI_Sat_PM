@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @-webkit-keyframes my-anim {
+            from{
+                width: 50px;
+                height: 50px;
+                background-color: blue;
+            }
+            to{
+                width: 300px;
+                height: 300px;
+                background-color: green;
+            }
+        }
+        @-moz-keyframes my-anim {
+            from{
+                width: 50px;
+                height: 50px;
+                background-color: blue;
+            }
+            to{
+                width: 300px;
+                height: 300px;
+                background-color: green;
+            }
+        }
+        @-o-keyframes my-anim {
+            from{
+                width: 50px;
+                height: 50px;
+                background-color: blue;
+            }
+            to{
+                width: 300px;
+                height: 300px;
+                background-color: green;
+            }
+        }
+        @keyframes my-anim {
+            from{
+                width: 50px;
+                height: 50px;
+                background-color: blue;
+            }
+            to{
+                width: 300px;
+                height: 300px;
+                background-color: green;
+            }
+        }
+        #div1{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+
+            -webkit-animation-name: my-anim;
+            -moz-animation-name: my-anim;
+            -o-animation-name: my-anim;
+            animation-name: my-anim;
+            -webkit-animation-duration: 6s;
+            -moz-animation-duration: 6s;
+            -o-animation-duration: 6s;
+            animation-duration: 6s;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>
