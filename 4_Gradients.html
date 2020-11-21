@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 250px;
+        background-color: red;
+        margin-bottom: 20px;
+      }
+
+      /*
+        background-image: linear-gradient(direction, color stop1, color stop2, ...);
+        direction:
+            to bottom => default
+            to left
+            to right
+            to top
+            to top left
+            to top right 
+            ...
+
+            deg
+      */
+      #div1 {
+        background-image: -webkit-linear-gradient(red, yellow);
+        background-image: -moz-linear-gradient(red, yellow);
+        background-image: -o-linear-gradient(red, yellow);
+        background-image: linear-gradient(red, yellow);
+      }
+
+      #div2{
+        background-image: linear-gradient(to bottom,red, yellow);
+        background-image: linear-gradient(to top,red, yellow);
+        background-image: linear-gradient(to right,red, yellow);
+        background-image: linear-gradient(to left,red, yellow);
+      }
+      #div3{
+        background-image: linear-gradient(to left top,red, yellow);
+        background-image: linear-gradient(to top right,red, yellow);
+        background-image: linear-gradient(to bottom right,red, yellow);
+        background-image: linear-gradient(to bottom left,red, yellow);
+      }
+      #div4{
+        background-image: linear-gradient(45deg,red, yellow);
+        background-image: linear-gradient(-45deg,red, yellow);
+      }
+      #div5{
+        background-image: linear-gradient(-90deg,red, yellow, green);
+        background-image: linear-gradient(-90deg,red, yellow, green, blue, pink);
+      }
+      #div6{
+        background-image: linear-gradient(-90deg,red, yellow, green);
+        background-image: linear-gradient(-90deg,red 0%, yellow 50%, green 100%);
+        background-image: linear-gradient(-90deg,red 0%, yellow 20%, green 100%);
+        background-image: linear-gradient(-90deg,red 0%, yellow 80%, green 100%);
+        background-image: linear-gradient(-90deg,red 20%, yellow 80%, green 100%);
+        background-image: linear-gradient(-90deg,red 20%, yellow 80%, green 90%);
+        background-image: linear-gradient(-90deg,red 20%, yellow 35%, green 90%);
+      }
+      #div7{
+        background-image: linear-gradient(-90deg,red 0%, yellow 10%, green 20%);
+        background-image: linear-gradient(-90deg,red 0%, yellow 10%, green 20%, red 30%, yellow 40%);
+        
+        background-image: repeating-linear-gradient(-90deg,red 0%, yellow 10%, green 20%);
+        background-image: repeating-linear-gradient(-90deg,red 0%, yellow 10%, green 20%, red 30%);
+      }
+      /*
+        background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+            shape 
+                ellipse (default)
+                circle
+            size
+                width height
+                100px 200px
+
+                farthest-corner    (default)
+                closest-side
+                farthest-side
+                closest-corner
+            position
+                x y
+                top left
+                bottom center
+                center (default)
+                100px 200px
+      */
+      #div8{
+          height: 500px;
+          background-image: radial-gradient(red,yellow, green);
+          background-image: radial-gradient(red 10%,yellow 15%, green 30%);
+      }
+      
+      #div9{
+          height: 500px;
+          background-image: radial-gradient(ellipse,red,yellow, green);
+          background-image: radial-gradient(circle,red,yellow, green);
+      }
+      #div10{
+          height: 500px;
+          background-image: radial-gradient(at center,red,yellow, green);
+          background-image: radial-gradient(at top left,red,yellow, green);
+          background-image: radial-gradient(at top right,red,yellow, green);
+          background-image: radial-gradient(at 200px 100px,red,yellow, green);
+      }
+      #div11{
+          height: 500px;
+          background-image: radial-gradient(200px 100px at 200px 100px,red,yellow, green);
+          background-image: radial-gradient(200px 200px at 200px 100px,red,yellow, green);
+          background-image: radial-gradient(200px at 200px 100px,red,yellow, green);
+          background-image: radial-gradient(circle 200px at 200px 100px,red,yellow, green);
+          background-image: radial-gradient(circle 200px 100px at 200px 100px,red,yellow, green);
+      }
+      #div12{
+          height: 500px;
+          background-image: radial-gradient(farthest-corner at 200px 100px,red,yellow, green);
+          background-image: radial-gradient(farthest-side at 200px 100px,red,yellow, green);
+          background-image: radial-gradient(closest-corner at 200px 100px,red,yellow, green);
+          background-image: radial-gradient(closest-side at 200px 100px,red,yellow, green);
+      }
+
+      #div13{
+        height: 500px;
+        background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+        background-image: repeating-radial-gradient(red, yellow 10%, green 15%, red 20%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+    <div id="div6"></div>
+    <div id="div7"></div>
+    <div id="div8"></div>
+    <div id="div9"></div>
+    <div id="div10"></div>
+    <div id="div11"></div>
+    <div id="div12"></div>
+    <div id="div13"></div>
+  </body>
+</html>
