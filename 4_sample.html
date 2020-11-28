@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{margin: 0;}
+        .row::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .contact-form{
+            margin: 100px auto;
+            width: 700px;
+            border: 1px solid #f1f1f1;
+            box-shadow: 0 2px 4px #cccccc;
+            padding: 8px;
+        }
+        .contact-form .label-container{
+            width: 30%;
+        }
+        .contact-form .input-container{
+            width: 70%;
+        }
+        .contact-form .input-container,.contact-form .label-container{
+            float: left;
+            margin-bottom: 10px;
+        }
+        .contact-form .label-container label,
+        .contact-form .input-container .input-control{
+            display: block;
+            width: 100%;
+            padding: 8px;
+        }
+        .contact-form .input-container .input-control{
+            border-radius: 6px;
+            border: 2px solid rgb(34, 119, 247);
+            outline: none;
+            resize: none;
+        }
+        .contact-form .input-container .input-control:focus{
+            box-shadow: 0 0 2px 1px blue;
+        }
+        .btn-submit{
+            display: block;
+            margin-left: auto;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            margin-top: 30px;
+            background-color: rgb(55, 160, 245);
+            color: white;
+            cursor: pointer;
+        }
+        .btn-submit:hover, .btn-submit:focus{
+            background-color: hsl(207, 90%, 45%);
+            box-shadow: 0 0 2px 1px blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form">
+        <form action="">
+            <div class="row">
+                <div class="label-container">
+                    <label for="">First Name :</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" name="fname" class="input-control" placeholder="Enter your first name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="label-container">
+                    <label for="">Last Name :</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" name="lname" class="input-control" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="label-container">
+                    <label for="">Email Address :</label>
+                </div>
+                <div class="input-container">
+                    <input type="email" name="email" class="input-control" placeholder="Enter your e-mail address">
+                </div>
+            </div>
+            <div class="row">
+                <div class="label-container">
+                    <label for="">Message :</label>
+                </div>
+                <div class="input-container">
+                    <textarea name="message" id="message" class="input-control" rows="5" ></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn-submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
