@@ -1,0 +1,15 @@
+*{box-sizing: border-box;}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+
+.w-50{
+    width: 50%;
+}
