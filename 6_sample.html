@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .navbar{
+            background-color: rgb(197, 130, 241);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: block;
+        }
+        .navbar .brand{
+            font-size: 2em;
+            padding: 1em;
+            background-color: rgb(101, 221, 127);
+        }
+        .navbar ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            /* background-color: rgb(228, 90, 90); */
+        }
+        .navbar ul a{
+            padding: 8px 16px;
+        }
+        .navbar ul a:hover{
+
+        }
+
+        .row{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        aside{
+            background-color: chocolate;
+            width: 25%;
+            padding: 16px;
+        }
+        main{
+            background-color: rgb(54, 214, 206);
+            width: 75%;
+            padding: 16px
+        }
+        footer{
+            background-color: #555555;
+            color: white;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="brand">Logo</a>
+        <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="row">
+        <aside>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+        </aside>
+        <main>
+            <h2>ajaksdvk</h2>
+            <img src="images/6Wri11SgO84hM4Ff.jpeg" alt="">
+        </main>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
